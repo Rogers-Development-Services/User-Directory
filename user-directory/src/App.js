@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from "react";
 import './App.css';
+import EmployeeTable from "./components/EmployeeTable";
+import employeeData from "./employeeData.json";
+import API from "./utils/API"
 
 function App() {
+
+  const [employeeSearch, setEmployeeSearch] = useState([]);
+
+  useEffect(function() {
+
+    API.getEmployeeList()
+    .then(res => {
+      setEmployeeSearch(res.data.results);
+    })
+    .catch(err => console.log(err));
+
+  }, []) // this doesn't change
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <EmployeeTable employees={employeeSearch}/>
   );
 }
+
+
 
 export default App;
