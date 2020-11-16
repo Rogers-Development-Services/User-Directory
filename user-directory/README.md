@@ -29,7 +29,7 @@ The user will be able to view an entire employee directory at once so that they 
 
 ## Deployed Application
 
-Here is the [deployed application](https://mighty-reaches-52293.herokuapp.com/).
+Here is the [deployed application](https://rogers-development-services.github.io/User-Directory/).
 
 ## Installation
 
