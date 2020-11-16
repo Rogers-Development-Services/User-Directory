@@ -1,69 +1,100 @@
-# Unit 19 React Homework: Employee Directory
+# User-Directory
 
-## Overview
-
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
-
-## Important Assignment Info
-
-Generate users here:
-
-https://randomuser.me/api/?results=200&nat=us
-
-(use axios to request users with this URL)
-
-Important data to display:
-
-picture, first and last name, phone, email, and date of birth
-
-**Note**
-
-Use a table, since this is tabular data. :-)
-
-## User Story
-
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
-
-## Business Context
+![License: MIT](https://img.shields.io/badge/license-MIT%20License-blue.svg) </br>
+![badge: Made With-React](https://img.shields.io/badge/Made%20With-React-Yellow) </br>
+![badge: Uses-Axios](https://img.shields.io/badge/Uses-axios-red) </br>
 
 An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
-## Acceptance Criteria
+The user will be able to view an entire employee directory at once so that they have quick access to their information.
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
+## Table of Contents
+[Deployed Application](https://github.com/Rogers-Development-Services/User-Directory#deployed-application)
 
-The user should be able to:
+[Installation](https://github.com/Rogers-Development-Services/User-Directory#installation)
 
-  * Sort the table by at least one category
+[Usage](https://github.com/Rogers-Development-Services/User-Directory#usage)
 
-  * Filter the users by at least one property.
+[Screenshots](https://github.com/Rogers-Development-Services/User-Directory#screenshots)
 
-## Commit Early and Often
+[Testing](https://github.com/Rogers-Development-Services/User-Directory#testing)
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+[Future Updates](https://github.com/Rogers-Development-Services/User-Directory#future-updates)
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+[Questions](https://github.com/Rogers-Development-Services/User-Directory#questions)
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+[Credits](https://github.com/Rogers-Development-Services/User-Directory#credits)
 
-Follow these guidelines for committing:
+[License](https://github.com/Rogers-Development-Services/User-Directory#license)
 
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+## Deployed Application
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+Here is the [deployed application](https://mighty-reaches-52293.herokuapp.com/).
 
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
+## Installation
 
-* Test your application before you commit to ensure functionality at every step in the development process
+Download this package, open your command line interface and run npm install. This should install the following dependencies aswell: Express, mongoose, path, and morgan. If for some reason, you need to install the dependencies individually run npm install "dependency_name".
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+Next run the following command to install the app: 
+
+```bash
+npm install 
+```
+
+```bash
+npm install express
+```
+
+Note: This app is run on a Heroku server, it is not necessary to download.
+
+## Usage 
+
+If you have downloaded the repository and have cloned the package to your machine, and have installed all dependencies, begin by typing "npm run start". 
+
+```bash
+npm run start 
+```
+
+You can search for employees by typing their name in the form input and/or sort by last name.
+
+Note: Only filter which currently works is sorting by last name.
+
+### Screenshots
+
+![Deployed Application](https://user-images.githubusercontent.com/38272211/99289953-857c0b00-27f2-11eb-83d1-e67fdf14d52f.JPG)
+
+## Testing
+
+Testing Instructions: Currently, there are no written tests for this application, but if you wish to write your, change the scripts property in package json file.
+
+```bash
+npm install jest
+```
+
+```bash
+npm test
+```
+
+## Future Updates
+This application is a work in progress, future updates will include: 
+1. Functionality for filtering employees by first name, email, or D.O.B.
+
+## Questions
+
+Share with us with any comments or questions to help us grow! 
+
+GitHub Profile: 
+[Rogers-Development-Services](https://www.github.com/Rogers-Development-Services) | [Portfolio](https://rogers-development-services.github.io/Portfolio/index.html)
 
 
-## Submission on BCS
+Email: 
+[matthew.shane.rogers@gmail.com](matthew.shane.rogers@gmail.com)
 
-You are required to submit the following:
+## Credits
 
-* the URL to the deployed application
+Code template provided by Trilogy Education 
 
-* the URL to the Github repository
+Thanks to [Chris Stead](https://github.com/cmstead) for troubleshooting and debugging assistance.
 
+## Licenses
+Licensed under the MIT License lincense.

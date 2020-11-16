@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
 import EmployeeTable from "./components/EmployeeTable";
-import employeeData from "./employeeData.json";
+// import employeeData from "./employeeData.json";
 import API from "./utils/API"
 
 function App() {

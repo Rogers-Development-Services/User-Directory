@@ -2,7 +2,7 @@ import React from "react";
 function NameForm(props) {
     return (
         <div>
-            <label htmlFor="form-input">Search Employee By Name</label>
+            <label htmlFor="form-input">Search Employee By Name </label>
             <input 
             type="text"
             value={props.filterState}

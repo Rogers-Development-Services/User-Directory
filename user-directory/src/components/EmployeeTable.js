@@ -39,16 +39,13 @@ function EmployeeTable(props) {
             })
         }
 
-        if () {
-            
-        };
         //sorting by last names
         filteredRecords.sort(compareLastNames(sortDirection));
         setFilteredEmployees(filteredRecords);
 
         //sorting by first names
-        filteredRecords.sort(compareFirstNames(sortDirection));
-        setFilteredEmployees(filteredRecords);
+        // filteredRecords.sort(compareFirstNames(sortDirection));
+        // setFilteredEmployees(filteredRecords);
 
     }, [props.employees, sortDirection, filterState])
 
@@ -70,7 +67,7 @@ function EmployeeTable(props) {
                 <thead>
                     <tr style={styles.filterButtonsStyle}>
                         <td><button style={styles.headshotButtonStyle} name="">Headshot</button></td>
-                        <th><FirstNameSortButton toggleSortDirection={toggleSortDirection} /></th>
+                        {/* <th><FirstNameSortButton toggleSortDirection={toggleSortDirection} /></th> */}
                         <th><LastNameSortButton toggleSortDirection={toggleSortDirection} /></th>
                         <td><button name="phone" onClick={props.handleButtonClick}>Phone</button></td>
                         <td><button name="email" onClick={props.handleButtonClick}>Email</button></td>
